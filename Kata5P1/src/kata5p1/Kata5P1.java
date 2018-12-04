@@ -1,12 +1,13 @@
 package kata5p1;
 
-import SQLQueries.SelectApp;
+import SQLQueries.CreateNewTable;
+
 
 public class Kata5P1 {
 
     public static void main(String[] args) {
-        SelectApp sa = new SelectApp();
-        sa.selectAll("people");
+        CreateNewTable cnt = new CreateNewTable();
+        cnt.createNewTable("EMAIL");
     }
     
 }
