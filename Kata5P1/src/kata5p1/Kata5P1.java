@@ -1,6 +1,5 @@
 package kata5p1;
 
-import SQLQueries.CreateNewTable;
 import SQLQueries.InsertarDatosTabla;
 import java.io.IOException;
 
