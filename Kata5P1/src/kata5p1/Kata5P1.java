@@ -1,13 +1,19 @@
 package kata5p1;
 
 import SQLQueries.CreateNewTable;
+import SQLQueries.InsertarDatosTabla;
+import java.io.IOException;
 
 
 public class Kata5P1 {
 
     public static void main(String[] args) {
-        CreateNewTable cnt = new CreateNewTable();
-        cnt.createNewTable("EMAIL");
+        try{
+            new InsertarDatosTabla().insert("EMAIL", new MailListReader().read("email.txt"));
+        }catch(IOException e){
+            System.out.println("No such file found");
+        }
+        
     }
     
 }
